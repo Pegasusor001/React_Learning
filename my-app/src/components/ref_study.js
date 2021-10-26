@@ -1,6 +1,7 @@
 // ref 常用场景：访问DOM节点，对管理聚焦，选中动画
+// useRef: ref的hook
 
-import React, {useState, useEffect, useRef, forwardRef} from 'react';
+import React, {useRef, forwardRef} from 'react';
 
 // 如果需要父组件传递Ref，则需要用 forwardRef 对子组件封装
 const RefChild = forwardRef((params, inputRef) => {
@@ -10,7 +11,8 @@ const RefChild = forwardRef((params, inputRef) => {
   
   return (
     <div>
-      <input type="text" ref={inputRef}></input>
+      <input type="text" ref={inputRef} value="input with Ref"></input>
+      <input type="text" value="input without Ref"></input>
       <br/>
       <button onClick={onClick}>Focus Child</button>
     </div>
