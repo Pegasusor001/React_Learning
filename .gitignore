@@ -1,6 +1,8 @@
 # compiled output
 /AMchart
 /node_modules
+/typescript-boilerplate
+/react-typescript-example
 
 # Logs
 logs
