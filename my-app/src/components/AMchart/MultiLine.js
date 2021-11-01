@@ -76,8 +76,6 @@ function AMchart(props) {
     let dateAxis = x.xAxes.push(new am4charts.DateAxis());
     let valueAxis = x.yAxes.push(new am4charts.ValueAxis());
 
-
-
     var series1 = createSeries(x, "value", "Series #1");
     var series2 = createSeries(x, "value2", "Series #2");
     var series3 = createSeries(x, "value3", "Series #3");
