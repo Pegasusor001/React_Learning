@@ -6,6 +6,7 @@ import MemoStudy from './components/memo_study'
 import StateCount from './components/state_study'
 import Composition from './components/composition_study';
 import AMchart from './components/AMchart';
+import MultiLine from './components/AMchart/MultiLine'
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         {/* <MemoStudy/> */}
         {/* <StateCount/> */}
         {/* <RefStudy/> */}
-        <AMchart/>
+        {/* <AMchart/> */}
+        {<MultiLine/>}
         {/* <Composition/> */}
     </div>
   );

@@ -1,4 +1,4 @@
-// useMemo保存渲染的结果
+// Memo用于保存渲染的结果，给定参数不发生变化时，不予渲染给定DOM
 
 import React, {useState, useMemo} from 'react';
 
@@ -9,7 +9,7 @@ const Child = ({a}) => {
   return <h2>{a}</h2>
 }
 
-// 回调函数中的组件为useMemo所保存的组件，只有当a变化时，组件才会发生变化
+// 回调函数中的组件为useMemo所保存的组件，只有当a变化时，组件才会发 生变化
 function Parent({a,b}) {
   const child1 = useMemo(() => <div>
     {console.log("This is a calculation")}
