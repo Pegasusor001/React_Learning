@@ -1,16 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-import {TextField} from './component/TextField'
-// import { Counter } from './component/Counter';
+import { BasicStudy1 } from "./component/Basic/index";
+import { StateStudy1 } from "./component/State/index";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <TextField text='hello' obj={{firstname:"Lun", lastname: "Ji"}}/>
+      {/* <BasicStudy1 text="hello" obj={{ firstname: "Lun", lastname: "Ji" }} /> */}
+      <StateStudy1 />
     </div>
   );
-}
+};
 
 export default App;
