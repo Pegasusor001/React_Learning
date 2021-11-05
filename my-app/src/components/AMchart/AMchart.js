@@ -1,10 +1,10 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useLayoutEffect } from "react";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_material from "@amcharts/amcharts4/themes/material";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
-const fakedata = require("../fakeData/AMchart")
+const fakedata = require("../../fakeData/AMchart");
 
 am4core.useTheme(am4themes_animated);
 am4core.useTheme(am4themes_material);
@@ -19,7 +19,7 @@ function AMchart(props) {
     x.data = fakedata;
 
     // Set input format for the dates
-    x.dateFormatter.inputDateFormat = "yyyy-MM-dd"; 
+    x.dateFormatter.inputDateFormat = "yyyy-MM-dd";
 
     // Create axes
     let dateAxis = x.xAxes.push(new am4charts.DateAxis());
@@ -29,7 +29,7 @@ function AMchart(props) {
     let series = x.series.push(new am4charts.LineSeries());
     series.dataFields.valueY = "value";
     series.dataFields.dateX = "date";
-    series.tooltipText = "value: {value}, Date: {date}"
+    series.tooltipText = "value: {value}, Date: {date}";
     series.strokeWidth = 2;
     series.minBulletDistance = 15;
 
@@ -79,8 +79,6 @@ function AMchart(props) {
     };
   }, []);
 
-  return (
-    <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
-  );
+  return <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>;
 }
 export default AMchart;
