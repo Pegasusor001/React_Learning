@@ -33,6 +33,7 @@ test("the data is hello with await", async () => {
   expect(data).toBe("hello");
 });
 
+// conditional use async/await
 test("the fetch fails with an error with await", async () => {
   expect.assertions(1);
   try {
@@ -43,10 +44,12 @@ test("the fetch fails with an error with await", async () => {
   }
 });
 
+// async/await + confirm the resolves
 test("the data is hello with await and resolve", async () => {
   await expect(fetchData("hello")).resolves.toBe("hello");
 });
 
+// async/await + confirm the rejects
 test("the fetch fails with an error with await and reject", async () => {
   await expect(fetchData("error")).rejects.toMatch("error");
 });
