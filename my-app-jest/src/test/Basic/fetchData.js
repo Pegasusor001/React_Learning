@@ -8,4 +8,11 @@ const fetchData = function (value) {
   });
 };
 
-module.exports = { fetchData };
+const axios = require("axios").default;
+class Users {
+  static all() {
+    return axios.get("/user.json").then((res) => res.data);
+  }
+}
+
+module.exports = { fetchData, Users };
