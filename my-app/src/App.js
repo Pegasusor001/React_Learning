@@ -14,13 +14,13 @@ import MultiLine from "./components/AMchart/MultiLine";
 function App() {
   return (
     <div className="App">
-      {/* <MemoStudy/> */}
-      {/* <StateStudy1/> */}
+      <MemoStudy />
+      <StateStudy1 />
       <RefStudy1 />
-      {/* <AMchart/> */}
-      {/* {<MultiLine />} */}
-      {/* <Composition/> */}
-      {/* {<CompositionFunction />} */}
+      <AMchart />
+      <MultiLine />
+      <Composition />
+      <CompositionFunction />
     </div>
   );
 }
