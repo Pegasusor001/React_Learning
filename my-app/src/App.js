@@ -6,6 +6,7 @@ import Props from "./components/Props/A_Props";
 import API from "./components/API/A_API";
 import Elements from "./components/Elements/A_Elements";
 import Hooks from "./components/Hooks/A_Hooks";
+import { ClassComponent } from "./components/ClassComponent/A_ClassComponent";
 import { RegExp } from "./components/Others/regExp";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/elements" element={<Elements />} />
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/regExp" element={<RegExp />} />
+          <Route path="/ClassComponent" element={<ClassComponent />} />
         </Routes>
       </Router>
     </div>
