@@ -1,9 +1,9 @@
 // useState, useEffect, and hook basics
 
 import React, { useState, useEffect } from "react";
-import useCount from "../../hooks/setState";
+import {useCount} from "../../CustomerHooks/setState";
 
-function StateStudy1() {
+function EffectStudy1() {
   const [count, setCount] = useCount(0);
   useEffect(() => {
     document.title = `count = ${count}`;
@@ -25,4 +25,4 @@ function StateStudy1() {
   );
 }
 
-export default StateStudy1;
+export default EffectStudy1;

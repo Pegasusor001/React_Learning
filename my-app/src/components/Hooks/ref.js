@@ -7,13 +7,37 @@ import React, { useRef, forwardRef } from "react";
 // Ref.current 指向 <input/> 被赋予 ref 的这个DOM 节点
 const RefStudy1 = function (params) {
   const inputRef = useRef();
+  const usernameRef = useRef();
+  const passwordRef = useRef();
+
   const onClick = () => {
     inputRef.current.focus();
+    // inputRef.current 指的就是 <input> tag
   };
+
+  const handleSubmit = event => {
+    event.preventefault();
+    console.log(usernameRef.current.value, passwordRef.current.value)
+  }
+
   return (
     <div>
-      <input ref={inputRef} value="input with Ref" />
-      <button onClick={onClick}>Focus Parent</button>
+      <h1>UseRef - Point to and select a Dom, use the Input as an Example</h1>
+      <div>
+        <h2>Input Focus after click</h2>
+        <input ref={inputRef} value="input with Ref" />
+        <button onClick={onClick}>Focus Parent</button>
+      </div>
+      <div>
+        <h2>Get the Input Value</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="username"> User Name</label>
+          <input ref={usernameRef} id="username"></input>
+
+          <label htmlFor="password"> Password</label>
+          <input ref={passwordRef} id="password"></input>
+        </form>
+      </div>
     </div>
   );
 };
