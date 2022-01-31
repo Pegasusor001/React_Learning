@@ -1,4 +1,4 @@
-// Memo用于保存渲染的结果，给定参数不发生变化时，不予渲染给定DOM
+// Memo用于保存渲染的结果，给定参数不发生变化时，不予渲染给定DOM, 或改变参数
 
 import React, { useState, useMemo } from "react";
 

@@ -1,7 +1,8 @@
 import { RefStudy1, RefStudy2 } from "./ref";
 import MemoStudy from "./memo";
-import EffectStudy1 from "./effect";
+import {EffectStudy1, EffectStudy2} from "./effect";
 import StateStudy1 from './state'
+import { ReducerStudy1, ReducerStudy2 } from "./reducer";
 
 // Rules of Hooks: 
 // 1. Put Hooks at top of a component, No Loops, Conditions, nested Functions
@@ -13,8 +14,12 @@ export default function Hooks() {
     <>
       <MemoStudy />
       <EffectStudy1 />
+      <EffectStudy2 />
       <RefStudy1 />
+      <RefStudy2 />
       <StateStudy1 />
+      <ReducerStudy1 />
+      <ReducerStudy2 />
     </>
   );
 }

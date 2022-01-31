@@ -55,7 +55,7 @@ const RefChild = forwardRef((params, inputRef) => {
       <input type="text" ref={inputRef} value="input with Ref"></input>
       <input type="text" value="input without Ref"></input>
       <br />
-      <button onClick={onClick}>Focus Child</button>
+      <button onClick={onClick}>Focus Click Child Component</button>
     </div>
   );
 });
@@ -68,8 +68,9 @@ const RefStudy2 = function (params) {
   };
   return (
     <div>
+      <h2>Forward Ref, 一个可以用来传递的Ref</h2>
       <RefChild ref={inputRef} />
-      <button onClick={onClick}>Focus Parent</button>
+      <button onClick={onClick}>Focus Click Parent Component</button>
     </div>
   );
 };
