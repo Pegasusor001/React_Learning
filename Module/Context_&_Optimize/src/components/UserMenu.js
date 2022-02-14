@@ -6,7 +6,7 @@ import React, {
 import {
   useUser,
   useUserActions
-} from './UserContext';
+} from '../context/UserContext';
 
 const UserMenu = () => {
   const [isMenuVisible, setMenuVisible] = useState(

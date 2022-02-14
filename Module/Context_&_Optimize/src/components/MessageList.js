@@ -1,6 +1,6 @@
 import React from 'react';
-import { useUser } from './UserContext';
-import { useEmail } from './EmailContext';
+import { useUser } from '../context/UserContext';
+import { useEmail } from '../context/EmailContext';
 
 const MessageList = () => {
   const user = useUser();

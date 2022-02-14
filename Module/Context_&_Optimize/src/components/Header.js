@@ -1,5 +1,5 @@
-import React from 'react';
-import UserMenu from './UserMenu';
+import React from "react";
+import UserMenu from "./UserMenu";
 
 const Header = ({ onLogout }) => (
   <header className="Header">

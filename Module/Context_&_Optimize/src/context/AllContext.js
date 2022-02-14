@@ -3,7 +3,7 @@ import { UserProvider } from './UserContext';
 import { EmailProvider } from './EmailContext';
 import { NotifyProvider } from './NotifyContext';
 
-export default function Providers({ children }) {
+export default function AllContext({ children }) {
   return (
     <NotifyProvider>
       <UserProvider>

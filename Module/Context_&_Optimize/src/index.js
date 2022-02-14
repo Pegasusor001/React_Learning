@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginPage from './LoginPage';
-import MainPage from './MainPage';
-import { useUser } from './UserContext';
-import Providers from './Providers';
+import LoginPage from './components/LoginPage';
+import MainPage from './components/MainPage';
+import { useUser } from './context/UserContext';
+import AllContext from './context/AllContext';
 import './index.css';
 
 function Root() {
@@ -12,8 +12,8 @@ function Root() {
 }
 
 ReactDOM.render(
-  <Providers>
+  <AllContext>
     <Root />
-  </Providers>,
+  </AllContext>,
   document.querySelector('#root')
 );

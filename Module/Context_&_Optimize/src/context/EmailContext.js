@@ -5,7 +5,7 @@ import React, {
   useMemo,
   useCallback
 } from 'react';
-import { fetchEmails, fetchLatestEmails } from './api';
+import { fetchEmails, fetchLatestEmails } from '../api_backend/api';
 import { useUser } from './UserContext';
 import { useNotify } from './NotifyContext';
 
@@ -46,6 +46,7 @@ function reducer(state, action) {
   }
 }
 
+// Email Context: 
 export function EmailProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, {
     emails: [],
@@ -68,6 +69,7 @@ export function EmailProvider({ children }) {
       );
   }, []);
 
+  // fetch emails
   useEffect(() => {
     const refresh = () => {
       if (!state.loading) {

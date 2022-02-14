@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import MessageList from './MessageList';
 import MessageViewer from './MessageViewer';
-import { useEmail } from './EmailContext';
+import { useEmail } from '../context/EmailContext';
 
 const MainPage = () => {
   const { currentEmail } = useEmail();

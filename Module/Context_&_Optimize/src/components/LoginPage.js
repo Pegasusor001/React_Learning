@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import * as API from './api';
-import { useUserActions } from './UserContext';
+import * as API from '../api_backend/api';
+import { useUserActions } from '../context/UserContext';
 
 function LoginPage() {
   const [error, setError] = useState(null);

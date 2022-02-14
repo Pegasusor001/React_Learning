@@ -4,7 +4,7 @@ import React, {
   useMemo,
   useCallback
 } from 'react';
-import { FAKE_USER } from './api';
+import { FAKE_USER } from '../api_backend/api';
 
 const UserContext = React.createContext();
 // UserContext.Provider
