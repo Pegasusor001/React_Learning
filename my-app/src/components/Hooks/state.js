@@ -1,7 +1,7 @@
 // useState, useEffect, and hook basics
 
 import React, { useState, useEffect } from "react";
-import {useCount, useMutableObj} from "../../CustomerHooks/setState";
+import {useCount, useMutableObj} from "../../customerHooks/setState";
 
 const StateStudy1 = () => {
   const [count, setCount] = useCount(1);
